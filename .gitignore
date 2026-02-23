@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Generated outputs
+*.pdf
+assets/newspaper.typ
+assets/xkcd_latest.png
+
+# Test artifacts
+vallie-daily-test*
+preview-*
+
+# State files
+.github_trending_state.json
+.xkcd_state.json
+
+# Fetcher output
+/tmp/
+output/

@@ -1,0 +1,71 @@
+{
+  "newspaper": {
+    "name": "Vallie's Daily",
+    "tagline": "Your personalized tech briefing",
+    "masthead_svg": "assets/masthead.svg"
+  },
+  "interests": "config/interests.md",
+  "sources": {
+    "techmeme": {
+      "enabled": true,
+      "url": "https://www.techmeme.com/",
+      "description": "Top tech headlines from Techmeme"
+    },
+    "producthunt": {
+      "enabled": true,
+      "url": "https://www.producthunt.com/feed?category=undefined",
+      "count": 5,
+      "description": "Top Product Hunt launches"
+    },
+    "hackernews": {
+      "enabled": true,
+      "url": "https://news.ycombinator.com/rss",
+      "count": 10,
+      "follow_links": true,
+      "description": "Hacker News front page stories"
+    },
+    "arxiv": {
+      "enabled": true,
+      "urls": [
+        "https://rss.arxiv.org/rss/cs.AI",
+        "https://rss.arxiv.org/rss/cs.CL",
+        "https://rss.arxiv.org/rss/cs.LG"
+      ],
+      "count": 10,
+      "description": "Latest AI, NLP, and ML papers from arXiv"
+    },
+    "github_trending": {
+      "enabled": true,
+      "url": "https://githubawesome.com/rss/",
+      "fallback_url": "https://rsshub.app/github/trending/daily",
+      "description": "Trending GitHub repositories"
+    },
+    "youtube": {
+      "enabled": true,
+      "max_age_hours": 24,
+      "fetch_transcripts": true,
+      "channels": [
+        {"name": "Mehul Mohan", "id": "UCJUmE61LxhbhudzUugHL2wQ"},
+        {"name": "Caleb Writes Code", "id": "UCuU9jE4MHHEIyYMbDfUPSew"},
+        {"name": "Olly Rosswell", "id": "UC5ty1e0B5cOqHTtAi21H14A"},
+        {"name": "Chris Raroque", "id": "UC4x3CR25WSlvMJUtSPPzwwg"},
+        {"name": "Starter Story", "id": "UChhw6DlKKTQ9mYSpTfXUYqA"},
+        {"name": "Greg Isenberg", "id": "UCPjNBjflYl0-HQtUvOx0Ibw"},
+        {"name": "Devops Toolbox", "id": "UCYeiozh-4QwuC1sjgCmB92w"},
+        {"name": "AICodeKing", "id": "UC0m81bQuthaQZmFbXEY9QSw"},
+        {"name": "Dan Koe", "id": "UCWXYDYv5STLk-zoxMP2I1Lw"},
+        {"name": "Piyush Garg", "id": "UCf9T51_FmMlfhiGpoes0yFA"},
+        {"name": "Ali Abdaal", "id": "UCoOae5nYA7VqaXzerajD0lg"},
+        {"name": "Latent Space Podcast", "id": "UCxBcwypKK-W3GHd_RZ9FZrQ"},
+        {"name": "Y Combinator", "id": "UCcefcZRL2oaA_uBNeo5UOWg"},
+        {"name": "AI Jason", "id": "UCrXSVX9a1mj8l0CMLwKgMVw"}
+      ],
+      "description": "New videos from subscribed YouTube channels"
+    },
+    "xkcd": {
+      "enabled": true,
+      "url": "https://www.xkcd.com/atom.xml",
+      "description": "Latest XKCD comic"
+    }
+  }
+}
