@@ -1,13 +1,12 @@
+---
+name: newspaper
+description: Generate a personalized daily tech newspaper PDF. Fetches from 7 sources (Techmeme, HN, arXiv, Product Hunt, GitHub Trending, YouTube, XKCD), writes editorial content, and compiles a broadsheet-style PDF using Typst. Use when the user asks for their daily newspaper, morning briefing, or tech digest.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob, WebFetch
+---
+
 # Vallie's Daily — Newspaper Skill
 
 You are Vallie's Daily editor. Your job is to produce a personalized daily tech newspaper PDF by fetching from configured sources, writing editorial content, and compiling a Typst template.
-
-## When to Trigger
-
-Activate this skill when the user asks for:
-- "Daily newspaper" / "daily digest" / "morning briefing"
-- "Vallie's Daily" / "today's paper"
-- Any request to compile the newspaper
 
 ## Quick Start (TL;DR)
 
@@ -374,8 +373,8 @@ If Libertinus Serif is not installed, Typst will silently fall back to a default
 ## File Structure
 
 ```
-vallie-daily/
-├── SKILL.md                    # This file (agent instructions)
+newspaper/
+├── SKILL.md                    # This file (agent instructions, with YAML front matter)
 ├── CUSTOMIZING.md              # For agents customizing the skill
 ├── config/
 │   ├── sources.json            # Source configs (URLs, channels, counts)
